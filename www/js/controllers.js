@@ -12,7 +12,12 @@ angular.module('starter.controllers', [])
     getData();
   },500);
 
+
+.controller('BeerTime', function($scope, FitActivity) {
+  $scope.activity = FitActivity.getoneActivity();
+  FitActivity.getAll(); 
 })
+
 
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();

@@ -21,8 +21,9 @@ angular.module('starter', ['ionic', 'ngCordova','starter.controllers', 'starter.
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $httpProvider) {
 
+  delete $httpProvider.defaults.headers.common['X-Requested-With'];
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
   // Set up the various states which the app can be in.
@@ -37,6 +38,16 @@ angular.module('starter', ['ionic', 'ngCordova','starter.controllers', 'starter.
   })
 
   // Each tab has its own nav history stack:
+
+  .state('tab.beertime', {
+    url: '/beertime',
+    views: {
+      'tab-beer-time': {
+        templateUrl: 'templates/beer-time.html',
+        controller: 'BeerTime'
+      }
+    }
+  })
 
   .state('tab.dash', {
     url: '/dash',

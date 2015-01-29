@@ -1,7 +1,32 @@
 <ion-view view-title="Beer Time">
   <ion-content class="padding">
-    <p>calories burned:
-      {{activity.calories}}
-    </p>
+    <h4>Drinking beer is pretty much the best workout ever.
+    </h4>
+    <div class="list card">
+      <div class="item item-divider">Calories In</div>
+      <div class="item item-body">
+        <div>
+          {{activity.calories}}
+        </div>
+      </div>
+    </div>
+    <div class="item item-divider">-</div>
+    <div class="list card">
+      <div class="item item-divider">Calories Out</div>
+      <div class="item item-body">
+        <div>
+          {{activity.calories}}
+        </div>
+      </div>
+    </div>
+    <div class="item item-divider">=</div>
+    <div class="list card">
+      <div class="item item-divider">Net Calories</div>
+      <div class="item item-body">
+        <div>
+          {{activity.calories}}
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>

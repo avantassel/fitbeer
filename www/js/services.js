@@ -6,9 +6,9 @@ angular.module('starter.services', [])
   // Some fake testing data
   var chats = [{
     id: 0,
-    name: 'Ben Sparrow',
-    lastText: 'You on your way?',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: 'Fit Bit',
+    lastText: 'Ready to drink beer?',
+    face: 'img/fitbit.jpeg'
   }, {
     id: 1,
     name: 'Max Lynx',
@@ -59,9 +59,9 @@ angular.module('starter.services', [])
   // Some fake testing data
   var friends = [{
     id: 0,
-    name: 'Ben Sparrow',
-    notes: 'Enjoys drawing things',
-    face: 'https://pbs.twimg.com/profile_images/514549811765211136/9SgAuHeY.png'
+    name: 'Fit Bit',
+    notes: 'Watching you move',
+    face: 'img/fitbit.jpeg'
   }, {
     id: 1,
     name: 'Max Lynx',

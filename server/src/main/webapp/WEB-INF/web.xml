@@ -5,12 +5,28 @@
 
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
     <servlet>
-        <servlet-name>demo</servlet-name>
-        <servlet-class>myapp.DemoServlet</servlet-class>
+        <servlet-name>senddata</servlet-name>
+        <servlet-class>myapp.SendData</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>demo</servlet-name>
-        <url-pattern>/demo</url-pattern>
+        <servlet-name>senddata</servlet-name>
+        <url-pattern>/sendData</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>getdata</servlet-name>
+        <servlet-class>myapp.GetData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>getdata</servlet-name>
+        <url-pattern>/getData</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>subscribe</servlet-name>
+        <servlet-class>myapp.Subscribe</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>subscribe</servlet-name>
+        <url-pattern>/subscribe</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

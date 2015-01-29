@@ -1,6 +1,13 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('BeerTime', function($scope, FitActivity) {
+  $scope.activity = FitActivity.getoneActivity();
+  FitActivity.getAll(); 
+})
+
+
+.controller('DashCtrl', function($scope) {
+})
 
 .controller('ChatsCtrl', function($scope, Chats) {
   $scope.chats = Chats.all();

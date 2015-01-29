@@ -1,5 +1,34 @@
 angular.module('starter.services', [])
 
+.service('FitActivity', function($http) {
+  this.getoneActivity = function() {
+    var data = {
+        "activityId":51007,
+        "activityParentId":90019,
+        "calories":230,
+        "description":"drinking",
+        "distance":2.04,
+        "duration":1097053,
+        "hasStartTime":true,
+        "isFavorite":true,
+        "logId":1154701,
+        "name":"Beer Time",
+        "startTime":"00:25",
+        "steps":3783
+      }
+    return data;
+  };
+  this.getAll = function() {
+    var req = {
+      url: 'http://magnetic-tenure-840.appspot.com/sendData'
+    }
+    $http(req)
+      .success(function(data){ 
+        console.log(data)
+      });
+  }
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
@@ -95,3 +124,5 @@ angular.module('starter.services', [])
     }
   }
 });
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "oauth-phonegap",
+  "homepage": "https://github.com/oauth-io/oauth-phonegap",
+  "version": "0.2.4",
+  "_release": "0.2.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.4",
+    "commit": "4789564a515da7813bd873f476d8c8b46db6260d"
+  },
+  "_source": "git://github.com/oauth-io/oauth-phonegap.git",
+  "_target": "*",
+  "_originalSource": "oauth-io/oauth-phonegap"
+}

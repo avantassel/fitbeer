@@ -8,3 +8,10 @@ On Twitter, [@Fit_Beer](http://twitter.com/fit_beer)
 * [Mark Chance](https://github.com/Java1Guy)
 * [Shane Pearson](https://github.com/shanepearson2000)
 * [Kirk Jubeck](https://github.com/jubby)
+
+### Running the app
+
+```sh
+$ cd www
+$ python -m SimpleHTTPServer 8000
+```
